@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Georgia&family=Menlo:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  color: #3a2e22;
+}
+
+body {
+  margin: 0;
+  background-color: #f4ece0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply bg-moss text-white hover:bg-moss/90;
+  }
+  .btn-secondary {
+    @apply bg-sand-200 text-ink hover:bg-sand-300;
+  }
+}
